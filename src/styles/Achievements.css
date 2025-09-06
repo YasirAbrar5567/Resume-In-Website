@@ -1,0 +1,43 @@
+.achievements-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  color: #333; /* Dark text color */
+}
+
+.achievements-section h2 {
+  font-size: 2.5em; /* Large font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  color: #333; /* Dark color */
+  text-shadow: none; /* Remove previous glow */
+}
+
+.achievements-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: white; /* Ensure background for shadow */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition */
+}
+
+.achievements-content:hover {
+  transform: translateY(-5px); /* Slight lift */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Increased shadow */
+}
+
+.achievements-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 1em; /* Standard paragraph text */
+  line-height: 1.6;
+  color: #555;
+}
+
+.achievements-content ul li {
+  margin-bottom: 0.5rem;
+}

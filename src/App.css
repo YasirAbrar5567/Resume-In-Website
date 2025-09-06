@@ -1,38 +1,72 @@
+/* Basic styles for the overall app */
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Basic Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem; /* Adjusted padding for smaller screens */
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .navbar-nav {
+    margin-top: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-item {
+    margin: 0 0.5rem;
+  }
+
+  .hero-main-name {
+    font-size: 3em; /* Adjusted font size for smaller screens */
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .about-section,
+  .skills-section,
+  .projects-section,
+  .experience-section,
+  .achievements-section,
+  .certifications-section,
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+
+  .about-content h2,
+  .skills-content h2,
+  .projects-content h2,
+  .experience-content h2,
+  .achievements-content h2,
+  .certifications-content h2,
+  .contact-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-content h3,
+  .skills-content h3,
+  .projects-content h3,
+  .experience-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-content p,
+  .about-content ul,
+  .skills-content ul,
+  .projects-content ul,
+  .experience-content p,
+  .experience-content ul,
+  .achievements-content ul,
+  .certifications-content ul,
+  .contact-content p {
+    font-size: 0.9rem;
   }
 }

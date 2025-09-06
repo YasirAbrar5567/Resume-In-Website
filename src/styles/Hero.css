@@ -1,0 +1,59 @@
+.hero-section {
+  height: 100vh; /* Occupies full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* Clean light background */
+  color: #333; /* Dark text color */
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; /* Ample vertical padding */
+}
+
+.hero-greeting {
+  font-family: 'Playfair Display', serif; /* Elegant serif font */
+  font-size: 1.8em; /* Larger */
+  font-weight: 400; /* Regular */
+  text-transform: none; /* No uppercase */
+  color: #777; /* Softer gray */
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em; /* Increased letter spacing */
+}
+
+.hero-intro-phrase {
+  font-family: 'Montserrat', sans-serif; /* Clean sans-serif */
+  font-size: 2.8em; /* Larger and bolder */
+  font-weight: 800; /* Extra bold */
+  text-transform: uppercase;
+  color: #444; /* Darker */
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em; /* Subtle letter spacing */
+}
+
+.hero-main-name {
+  font-family: 'Oswald', sans-serif; /* Distinct font for name */
+  font-size: 5.5em; /* Even larger */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #007bff; /* Revert to original accent color */
+  /* Removed background-color, padding, border-radius */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Revert text shadow */
+  line-height: 1.1; /* Adjust line height */
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-family: 'Playfair Display', serif; /* Matches greeting font */
+  font-size: 2em; /* Larger */
+  font-style: italic; /* Italic */
+  font-weight: 400; /* Regular */
+  color: #666; /* Medium gray */
+  margin-bottom: 2rem;
+  letter-spacing: 0.08em; /* Increased letter spacing */
+}
