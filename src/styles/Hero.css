@@ -1,0 +1,83 @@
+.hero-section {
+  height: 100vh; /* Occupies full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, rgba(255,255,255,0.95) 0%, rgba(240,248,255,0.9) 50%, rgba(255,240,245,0.95) 100%);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  color: #333; /* Dark text color */
+  text-align: center;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,105,180,0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(135,206,250,0.15) 0%, transparent 50%),
+              radial-gradient(circle at 20% 80%, rgba(255,215,0,0.1) 0%, transparent 50%);
+  animation: floatingBubbles 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes floatingBubbles {
+  0% { transform: rotate(0deg) translateX(0px); }
+  100% { transform: rotate(360deg) translateX(20px); }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; /* Ample vertical padding */
+  position: relative;
+  z-index: 2;
+}
+
+.hero-greeting {
+  font-family: 'Playfair Display', serif; /* Elegant serif font */
+  font-size: 1.8em; /* Larger */
+  font-weight: 400; /* Regular */
+  text-transform: none; /* No uppercase */
+  color: #777; /* Softer gray */
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em; /* Increased letter spacing */
+}
+
+.hero-intro-phrase {
+  font-family: 'Montserrat', sans-serif; /* Clean sans-serif */
+  font-size: 2.8em; /* Larger and bolder */
+  font-weight: 800; /* Extra bold */
+  text-transform: uppercase;
+  color: #444; /* Darker */
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em; /* Subtle letter spacing */
+}
+
+.hero-main-name {
+  font-family: 'Oswald', sans-serif; /* Distinct font for name */
+  font-size: 5.5em; /* Even larger */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #007bff; /* Revert to original accent color */
+  /* Removed background-color, padding, border-radius */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Revert text shadow */
+  line-height: 1.1; /* Adjust line height */
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-family: 'Playfair Display', serif; /* Matches greeting font */
+  font-size: 2em; /* Larger */
+  font-style: italic; /* Italic */
+  font-weight: 400; /* Regular */
+  color: #666; /* Medium gray */
+  margin-bottom: 2rem;
+  letter-spacing: 0.08em; /* Increased letter spacing */
+}

@@ -1,0 +1,83 @@
+.projects-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(240,248,255,0.85) 50%, rgba(255,240,245,0.9) 100%);
+  backdrop-filter: blur(12px);
+  position: relative;
+  color: #333; /* Dark text color */
+}
+
+.projects-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(255,182,193,0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(173,216,230,0.15) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(255,215,0,0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.projects-section h2 {
+  font-size: 2.5em; /* Large font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  background: linear-gradient(45deg, #f093fb, #f5576c, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none; /* Remove previous glow */
+  position: relative;
+  z-index: 2;
+}
+
+.projects-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Fixed 2 columns */
+  gap: 2rem; /* Consistent gap between project cards */
+}
+
+.project-card {
+  background-color: white; /* Changed back to white */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: left;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Added border-color transition */
+  min-height: 250px; /* Ensure consistent card height */
+  /* Removed border: 1px solid #ccc; */
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Slight lift */
+  box-shadow: 0 20px 40px rgba(240, 147, 251, 0.4), 0 10px 20px rgba(245, 87, 108, 0.3); /* Pink gradient shadow */
+  border-color: #ccc; /* Changed to light grey border on hover */
+}
+
+.project-card h3 {
+  font-size: 1.4em; /* Prominent title */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.project-subtitle {
+  font-size: 0.9em; /* Smaller font size */
+  text-transform: uppercase;
+  color: #777; /* Lighter color */
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 1em; /* Standard paragraph text */
+  line-height: 1.6;
+  color: #555;
+}
