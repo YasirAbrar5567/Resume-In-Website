@@ -27,7 +27,7 @@ const About: React.FC = () => {
       
       {/* Moved image card here */}
       <div className="about-image-card-standalone" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="200"> 
-        <img src={process.env.PUBLIC_URL + '/YASIR__ABRAR.jpg'} alt="Yasir Abrar" className="about-pic" /> {/* Changed image source */} 
+        <img src={process.env.PUBLIC_URL + '/YASIR__ABRAR.jpg?v=1.1'} alt="Yasir Abrar" className="about-pic" /> {/* Changed image source */} 
       </div>
 
       <div className="about-content">
