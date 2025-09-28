@@ -1,0 +1,74 @@
+/* Basic styles for the overall app */
+
+.App {
+  text-align: center;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Basic Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem; /* Adjusted padding for smaller screens */
+  }
+
+  .navbar-nav {
+    margin-top: 1rem;
+  }
+
+  .nav-item {
+    margin: 0 0.5rem;
+  }
+
+  .hero-main-name {
+    font-size: 3em; /* Adjusted font size for smaller screens */
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .about-section,
+  .skills-section,
+  .projects-section,
+  .experience-section,
+  .achievements-section,
+  .certifications-section,
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+
+  .about-content h2,
+  .skills-content h2,
+  .projects-content h2,
+  .experience-content h2,
+  .achievements-content h2,
+  .certifications-content h2,
+  .contact-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-content h3,
+  .skills-content h3,
+  .projects-content h3,
+  .experience-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-content p,
+  .about-content ul,
+  .skills-content ul,
+  .projects-content ul,
+  .experience-content p,
+  .experience-content ul,
+  .achievements-content ul,
+  .certifications-content ul,
+  .contact-content p {
+    font-size: 0.9rem;
+  }
+}

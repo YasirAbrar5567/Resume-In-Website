@@ -1,0 +1,13 @@
+.footer-section {
+  background-color: #333; /* Solid dark color, matching navigation bar */
+  color: white; /* White text color */
+  text-align: center;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+  box-shadow: none; /* Remove previous shadow */
+}
+
+.footer-section p {
+  font-size: 0.85em; /* Smaller font size */
+  margin: 0;
+}
