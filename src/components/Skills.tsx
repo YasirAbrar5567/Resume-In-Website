@@ -23,7 +23,7 @@ const Skills: React.FC = () => {
             </div>
             <div className="nested-card">
               <h4>Web Development</h4>
-              <p>HTML, CSS, JavaScript</p>
+              <p>HTML, CSS, JavaScript, React, Node.js, Canva, Figma</p>
             </div>
             <div className="nested-card">
               <h4>Operating Systems & Databases</h4>
