@@ -5,7 +5,9 @@ const Skills: React.FC = () => {
   return (
     <section id="creative-edge" className="skills-section">
       <h2 data-aos="zoom-in">CREATIVE EDGE</h2>
-      <p className="skills-subtitle" data-aos="fade-down" data-aos-delay="100">I fuse technical innovation with artistic expression</p>
+      <p className="skills-subtitle" data-aos="fade-down" data-aos-delay="100">
+        I fuse technical innovation with artistic expression
+      </p>
 
       <div className="main-skills-container">
         <div className="main-skill-card" data-aos="zoom-out-up">
@@ -13,14 +15,14 @@ const Skills: React.FC = () => {
           <div className="nested-cards-container">
             <div className="nested-card">
               <h4>Programming Languages</h4>
-              <p>Java, SQL, basic Python</p>
+              <p>Java, Python (Basic)</p>
             </div>
             <div className="nested-card">
-              <h4>Platforms</h4>
-              <p>ServiceNow</p>
+              <h4>Technologies</h4>
+              <p>ServiceNow, SQL</p>
             </div>
             <div className="nested-card">
-              <h4>Web Technologies</h4>
+              <h4>Web Development</h4>
               <p>HTML, CSS, JavaScript</p>
             </div>
             <div className="nested-card">
@@ -28,8 +30,8 @@ const Skills: React.FC = () => {
               <p>Windows, Linux</p>
             </div>
             <div className="nested-card">
-              <h4>Tools</h4>
-              <p>MS Excel, MS PowerPoint</p>
+              <h4>Coursework</h4>
+              <p>Data Structures & Algorithms, Database Management Systems (DBMS), Operating Systems, Computer Networks, Software Engineering</p>
             </div>
           </div>
         </div>

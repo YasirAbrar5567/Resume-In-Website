@@ -3,11 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(45deg, rgba(255,255,255,0.95) 0%, rgba(240,248,255,0.9) 50%, rgba(255,240,245,0.95) 100%);
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Soft, light grey-blue gradient */
   backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
-  color: #333; /* Dark text color */
+  color: #333; /* Dark text color for contrast */
   text-align: center;
 }
 

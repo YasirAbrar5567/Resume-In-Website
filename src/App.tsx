@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ paddingTop: '80px' }}>
       {/* Removed animated-background div */}
       <NavigationBar />
       <Hero />
